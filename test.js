@@ -15,10 +15,10 @@ var _react2 = _interopRequireDefault(_react);
 
   
 var _reactNative = ReactNative;
-
+   
   return _react2.default.createElement(
           _reactNative.Text,
-          {},
+          { onPress : function () { alert("Thank You For Clicking Me on this. Nice") }},
           ['Nice Once Again. Thank you !!']
       );
       
