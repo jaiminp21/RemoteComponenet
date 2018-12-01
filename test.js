@@ -18,7 +18,7 @@ var _reactNative = ReactNative;
    
   return _react2.default.createElement(
           _reactNative.Text,
-          { onPress : function () { alert("Thank You For Clicking Me on this. Nice") }},
+          { onPress : function () { alert(this.state.existingUserId) }},
           ['Nice Once Again. Thank you !!']
       );
       
