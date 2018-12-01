@@ -29,7 +29,7 @@ var NewComponent = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (NewComponent.__proto__ || Object.getPrototypeOf(NewComponent)).call(this, props));
 
-    _this.state = {};
+    _this.state = { existingUserId :"Spamlay" };
     return _this;
   }
 
@@ -43,7 +43,7 @@ var NewComponent = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
           _reactNative.Text,
-          {},
+          {onPress : function() { alert(this.state.existingUserId)}},
           ['I am here again...!']
       );
     }
