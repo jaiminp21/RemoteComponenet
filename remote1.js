@@ -41,9 +41,10 @@ var NewComponent = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
+      var _this = this;
       return _react2.default.createElement(
           _reactNative.Text,
-          {onPress : function() { alert(this.state.existingUserId)}},
+          {onPress : function() { alert(_this.state.existingUserId)}},
           ['I am here again...!']
       );
     }
