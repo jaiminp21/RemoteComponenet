@@ -26,7 +26,7 @@
                 ['Nice Once Again. Thank you !!']
             );*/
 
-        return _react2.default.createElement(_reactNative.View, {}, [])
+        return _react2.default.createElement(_reactNative.View, {}, []);
     }
 
 })
