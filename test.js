@@ -27,6 +27,5 @@
             );*/
 
         return _react2.default.createElement(_reactNative.View, {}, []);
-    }
 
 })
