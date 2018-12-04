@@ -25,4 +25,5 @@
                 { onPress : function () { alert(componentState.state.existingUserId) }},
                 ['Nice Once Again. Thank you !!']
             );
+}
 })
