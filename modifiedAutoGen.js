@@ -11,9 +11,9 @@
         };
     }
 
-    var _react1 = React;
+    var _react = React;
 
-    var _react2 = _interopRequireDefault(_react);
+    var _react1 = _interopRequireDefault(_react);
     
     var _reactNative = ReactNative;
 
