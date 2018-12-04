@@ -30,6 +30,6 @@
                 _reactNative.Text,
                 { onPress : function () { alert(componentState.state.existingUserId) }},
                 ['Nice Once Again. Thank you !!']
-            );]);
+            )]);
 
 })
