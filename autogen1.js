@@ -16,7 +16,7 @@
     //var react_1 = _interopRequireDefault(_react);
     
     var _reactNative = ReactNative;
-
+    var root = this;
     return react_1.createElement(_reactNative.View, {},
 
         [react_1.createElement(_reactNative.View,
@@ -46,7 +46,7 @@
         }, [react_1.createElement(_reactNative.Text, {
             "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03_Label"
-        }, "Existing User ID")]), react_1.createElement(Text_1.Text, {
+        }, "Existing User ID")]), react_1.createElement(_reactNative.Text, {
             "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "cssClass": "form-field-value",
@@ -84,7 +84,7 @@
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_field_container"
         }, [react_1.createElement(_reactNative.View, {
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_Label_container"
-        }, [react_1.createElement("Label", {
+        }, [react_1.createElement(_reactNative.Text, {
             "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_Label"
         }, "Confirm User ID")]), react_1.createElement(_reactNative.TextInput, {
