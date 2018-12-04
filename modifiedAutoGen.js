@@ -13,7 +13,7 @@
 
     var _react = React;
 
-    var _react1 = _interopRequireDefault(_react);
+    var react_1 = _interopRequireDefault(_react);
     
     var _reactNative = ReactNative;
 
