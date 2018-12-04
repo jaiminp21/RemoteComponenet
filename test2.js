@@ -26,6 +26,10 @@
                 ['Nice Once Again. Thank you !!']
             );*/
 
-        return _react2.default.createElement(_reactNative.View, {}, []);
+        return _react2.default.createElement(_reactNative.View, {}, [ _react2.default.createElement(
+                _reactNative.Text,
+                { onPress : function () { alert(componentState.state.existingUserId) }},
+                ['Nice Once Again. Thank you !!']
+            );]);
 
 })
