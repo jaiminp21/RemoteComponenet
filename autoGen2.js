@@ -100,7 +100,7 @@
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnConfirm",
             "cssClass": "btn btn-primary btn-full-width component-group",
             "Label": "Save Changes",
-            onClick: function () {
+            onPress: function () {
                 alert(componentState.confirmUserId)
                 //return componentState.SetState
             }
@@ -110,7 +110,7 @@
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
             "cssClass": "btn btn-secondary btn-full-width component-group",
             "Label": "Cancel",
-            onClick: function () {
+            onPress: function () {
                 //return root.cancelChangeLoginName()
             }
         }, ["Cancel"])
