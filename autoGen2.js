@@ -80,7 +80,7 @@
             "bindingMode": "",
              onChangeText: function(val){
                 componentState.setState({confirmUserId : val})
-                 console.warn(componentState.confirmUserId)
+                 console.warn(componentState.state.confirmUserId)
             },
             "placeHolder": ""
         }, [])]), react_1.createElement(_reactNative.View, {
@@ -102,7 +102,7 @@
             "cssClass": "btn btn-primary btn-full-width component-group",
             "Label": "Save Changes",
             onPress: function () {
-                alert(componentState.confirmUserId)
+                alert(componentState.state.confirmUserId)
                 //return componentState.SetState
             }
         }, ["Save Changes"]),
