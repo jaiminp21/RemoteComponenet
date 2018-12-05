@@ -79,7 +79,8 @@
             "fieldCssClass": "",
             "bindingMode": "",
              onChangeText: function(val){
-                componentState.setState( { confirmUserId : val })  
+                componentState.setState({confirmUserId : val})
+                 console.warn(componentState.confirmUserId)
             },
             "placeHolder": ""
         }, [])]), react_1.createElement(_reactNative.View, {
