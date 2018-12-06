@@ -84,7 +84,7 @@
 						"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_field_container"
 					}, [react_1.createElement(reactNative.View, {
 								"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_label_container"
-							}, [react_1.createElement("label", {
+							}, [react_1.createElement(reactNative.Text, {
 										"htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
 										"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_label"
 									}, "Confirm User ID")]), react_1.createElement(reactNative.Text, {
