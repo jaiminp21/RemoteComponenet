@@ -11,13 +11,13 @@
 	var react_1 = React;
 	var reactNatvie = ReactNative;
 	var root = this;
-	return react_1.createElement(reactNative.View, {}, [react_1.createElement(Notification_1.Notification, {
+	return react_1.createElement(reactNative.View, {}, [react_1.createElement(reactNative.View, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_notificationMessage",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_notificationMessage",
 				"cssClass": "notification",
 				"text": null,
 				"notifyType": {}
-			}, []), react_1.createElement(Message_1.Message, {
+			}, []), react_1.createElement(reactNative.Text, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_messageHeaderContent",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_messageHeaderContent",
 				"cssClass": "form-message",
