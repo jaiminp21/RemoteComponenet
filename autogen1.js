@@ -12,11 +12,9 @@
     }
 
     var react_1 = React;
-
-    //var react_1 = _interopRequireDefault(_react);
-    
     var _reactNative = ReactNative;
     var root = this;
+    
     return react_1.createElement(_reactNative.View, { style : { "backgroundColor":"lightgrey"}},
 
         [react_1.createElement(_reactNative.View,
