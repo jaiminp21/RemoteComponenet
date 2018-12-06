@@ -87,7 +87,7 @@
 							}, [react_1.createElement("label", {
 										"htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
 										"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_label"
-									}, "Confirm User ID")]), react_1.createElement(ConfirmationTextBox_1.ConfirmationTextBox, {
+									}, "Confirm User ID")]), react_1.createElement(reactNative.Text, {
 								"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
 								"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
 								"cssClass": "form-control component-group",
@@ -106,7 +106,7 @@
 									})
 								},
 								"mismatchErrorMessage": "The content provided in the Confirm User ID field does not match the content in the New User ID field."
-							}, [])])]), react_1.createElement(Button_1.Button, {
+							}, [])])]), react_1.createElement(Button, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnConfirm",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnConfirm",
 				"cssClass": "btn btn-primary btn-full-width component-group",
@@ -114,7 +114,7 @@
 				"onClick": function () {
 					return root.submitChangeLoginName()
 				}
-			}, []), react_1.createElement(Button_1.Button, {
+			}, []), react_1.createElement(Button, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
 				"cssClass": "btn btn-secondary btn-full-width component-group",
