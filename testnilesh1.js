@@ -34,7 +34,7 @@
 							}, [react_1.createElement("label", {
 										"htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
 										"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03_label"
-									}, "Existing User ID")]), react_1.createElement(ReadOnlyField_1.ReadOnlyField, {
+									}, "Existing User ID")]), react_1.createElement(reactNative.Text, {
 								"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
 								"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
 								"cssClass": "form-field-value",
@@ -59,7 +59,7 @@
 							}, [react_1.createElement("label", {
 										"htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
 										"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_label"
-									}, "New User ID")]), react_1.createElement(TextBox_1.TextBox, {
+									}, "New User ID")]), react_1.createElement(reactNative.Text, {
 								"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
 								"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
 								"cssClass": "form-control component-group",
