@@ -93,28 +93,6 @@
 								"cssClass": "form-control component-group",
 								"fieldCssClass": "",
 								"bindingMode": "",
-								"validators": [react_1.createElement(RequiredValidator_1.RequiredValidator, {
-										"key": "required",
-										"errorMessage": "This field is required."
-									}, []), react_1.createElement(MaxLengthValidator_1.MaxLengthValidator, {
-										"key": "maxLength",
-										"errorMessage": "This field accepts at most {maxLength} characters.",
-										"maxLength": function () {
-											return root.state.maxLength
-										}
-									}, []), react_1.createElement(MinLengthValidator_1.MinLengthValidator, {
-										"key": "minLength",
-										"errorMessage": "This field accepts at least {minLength} characters.",
-										"minLength": function () {
-											return root.state.minLength
-										}
-									}, []), react_1.createElement(ValidCharsValidator_1.ValidCharsValidator, {
-										"key": "pattern",
-										"errorMessage": "The character \u2018{invalidChar}\u2019 is not allowed.",
-										"validChars": function () {
-											return root.state.validChars
-										}
-									}, [])],
 								"getValue": function () {
 									return root.state.loginName
 								},
