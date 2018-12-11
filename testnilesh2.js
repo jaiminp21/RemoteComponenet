@@ -17,14 +17,14 @@
 		"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_view",
 		"cssClass": null,
 		"style": styles.container
-	}, [react_1.createElement(reactNative.Text, {
+	}, [react_1.createElement(reactNative.View, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_notificationMessage",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_notificationMessage",
 				"cssClass": "notification",
 				"text": null,
 				"notifyType": {},
 				"bodyText": null
-			}, null), react_1.createElement(reactNative.Text, {
+			}, []), react_1.createElement(reactNative.Text, {
 				"id": "M_layout_content_PCDZ_MNS7LAN_ctl00_messageHeaderContent",
 				"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_messageHeaderContent",
 				"cssClass": "form-message",
