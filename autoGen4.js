@@ -42,7 +42,7 @@
             "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03_Label",
             style : styles.labelMargin
-        }, "Existing User ID")]), react_1.createElement(_reactNative.Text, {
+        }, ["Existing User ID"])]), react_1.createElement(_reactNative.Text, {
             "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl03",
             "cssClass": "form-field-value",
@@ -57,7 +57,7 @@
             "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
             style : styles.labelMargin
-        }, "New User ID")]), react_1.createElement(_reactNative.TextInput, {
+        }, ["New User ID"])]), react_1.createElement(_reactNative.TextInput, {
             "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
             "cssClass": "form-control component-group",
@@ -76,7 +76,7 @@
             "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_Label",
             style : styles.labelMargin
-        }, "Confirm User ID")]), react_1.createElement(_reactNative.TextInput, {
+        }, ["Confirm User ID"])]), react_1.createElement(_reactNative.TextInput, {
             "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
             "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02",
             "cssClass": "form-control component-group",
