@@ -86,7 +86,8 @@
 								},
 								"type": "text",
 								"handleIconClick": "",
-								"placeHolder": ""
+								"placeHolder": "",
+								"style": styles.textInput
 							}, [])]), react_1.createElement(reactNative.View, {
 						"key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl02_field_container"
 					}, [react_1.createElement(reactNative.View, {
