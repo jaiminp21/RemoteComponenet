@@ -72,7 +72,6 @@
 								"cssClass": "form-control component-group",
 								"fieldCssClass": "",
 								"bindingMode": "",
-								],
 								"getValue": function () {
 									return view.state.loginName
 								},
@@ -101,7 +100,6 @@
 								"cssClass": "form-control component-group",
 								"fieldCssClass": "",
 								"bindingMode": "",
-								],
 								"getValue": function () {
 									return view.state.loginName
 								},
