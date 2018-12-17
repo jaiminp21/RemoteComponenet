@@ -139,6 +139,7 @@
             style :  styles.saveButton,
             onPress: function () {
             }
-        }, ["Cancel"])
+        }, ["Cancel"]),
+         react_1..createElement(Footer,{})
         ])
 })
