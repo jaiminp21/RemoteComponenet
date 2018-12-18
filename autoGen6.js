@@ -140,6 +140,5 @@
             onPress: function () {
             }
         }, ["Cancel"]),
-         react_1.createElement(Footer,{})
         ])
 })
