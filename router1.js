@@ -6,7 +6,7 @@
     var root = this;
       
     
-    var Component = createReactClass({
+    return createReactClass({
     render: function() {
         return react_1.createElement(Root, { "id" :"roott" },
         [
@@ -23,7 +23,7 @@
    });
  
      
-  return Component;
+//  return Component;
 
   
 })
