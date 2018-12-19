@@ -8,6 +8,6 @@
   
     return react_1.createElement(_reactNative.Root, {},
         [
-          react_1.createElement(NavigationRouter,{})
+          react_1.createElement(NavigationRouter,{}),
         ])
 })
