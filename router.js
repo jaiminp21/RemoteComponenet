@@ -1,4 +1,4 @@
-(function main(React, ReactNative,Root,NavigationRouter, equire) {
+(function main(React, ReactNative,Root,NavigationRouter, require) {
 
 
     var react_1 = React;
