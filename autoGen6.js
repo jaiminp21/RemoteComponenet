@@ -1,11 +1,11 @@
-(function main(React, ReactNative, componentState, Button, Footer, StyleSheet, responsiveHeight, responsiveFontSize, require) {
+(function main(React, ReactNative, componentState, Button, Footer, StyleSheet1, responsiveHeight, responsiveFontSize, require) {
     
     var react_1 = React;
 
     var _reactNative = ReactNative;
 
     var root = this;
-  var styles = StyleSheet.create({
+  var styles = StyleSheet1.create({
   container: {
     flex: 1,
     padding : responsiveHeight(4)
