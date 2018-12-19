@@ -1,9 +1,7 @@
 (function main(React, ReactNative, componentState, Button, styles, require) {
     'use strict';
 
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
+   
 
     var react_1 = React;
 
