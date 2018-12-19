@@ -7,7 +7,7 @@
       
     
    
-        return react_1.createElement(Root, { "id" :"rootooooo" },
+   return react_1.createElement(Root, { "id" :"rootooooo" },
         [
         
         react_1.createElement(NavigationRouter,
@@ -16,9 +16,5 @@
                 "text": null,
                 "notifyType": {}
             }, [])
-        ]
-        );
- 
-
-  
+     ])
 })
