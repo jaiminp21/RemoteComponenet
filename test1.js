@@ -7,12 +7,12 @@
       
     
    
-   return react_1.createElement(_reactNative.View, { "id" :"rootooooo" },
+   return react_1.createElement(Root, { "key" :"rootooooo" },
         [
         
-        react_1.createElement(_reactNative.View,
+        react_1.createElement(NavigationRouter,
             {
-                "id": "M_layoutoooooo",
+                "key": "M_layoutoooooo",
                 "text": null,
                 "notifyType": {}
             }, [])
