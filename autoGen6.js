@@ -4,8 +4,8 @@
 
     var _reactNative = ReactNative;
 
-    var root = this;
-  var styles = StyleSheet1.create({
+  var root = this;
+  const styles = StyleSheet1.create({
   container: {
     flex: 1,
     padding : responsiveHeight(4)
