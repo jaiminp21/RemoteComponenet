@@ -4,7 +4,7 @@
     var react_1 = React;
     var _reactNative = ReactNative;
         
-        react_1.createElement(NavigationRouter,
+       return react_1.createElement(NavigationRouter,
             {
                 "key": "M_layoutoooooo",
                 "text": null
