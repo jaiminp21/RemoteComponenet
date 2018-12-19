@@ -1,4 +1,4 @@
-(function main(React, ReactNative, componentState, Button, Footer, StyleSheet1, responsiveHeight, responsiveFontSize, require) {
+(function main(React, ReactNative, componentState, Button, StyleSheet1, responsiveHeight, responsiveFontSize, require) {
     
     var react_1 = React;
 
