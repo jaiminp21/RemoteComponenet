@@ -86,7 +86,7 @@
             key: 'render',
             value: function render() {
                 var _this = this;
-                var component = componentState.screenProps.inputText
+                var component = componentState.state.screenProps.inputText
                 
                 return _react2.default.createElement(_reactNative.View, { style: styles.container },
 
