@@ -1,6 +1,6 @@
 {
-filename :"index.android.bundle",
-version_name : "1",
-version_code :"1212",
-react_native_version :"5.5"
+"filename" :"index.android.bundle",
+"version_name" : "1",
+"version_code" :"1212",
+"react_native_version" :"5.5"
 }
