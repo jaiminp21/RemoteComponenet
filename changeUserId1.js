@@ -103,8 +103,8 @@
             value: function render() {
                 var _this = this;
 
-                let i = 1;
-                let isAndroid = Platform.OS == "android" ? true : false
+                var i = 1;
+                var isAndroid = Platform.OS == "android" ? true : false
 
                 return _react2.default.createElement(_reactNative._reactNative.View, { style: styles.container },
                     [
