@@ -129,7 +129,7 @@
                             'Content-Type': 'application/json',
                             "X-CSRF-TOKEN": result.antiForgeryToken,
                         }
-                    ).then(function(result1)  {
+                    ).then((result1)  =>{
 
                         console.warn(result1)
                         // if (!result1.getAccountsAt) {
