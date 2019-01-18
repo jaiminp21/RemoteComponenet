@@ -195,11 +195,6 @@
                                     }, [
 
                                             // For loop for render Method....
-                                            _this.state.accountSummary.map((account, index) => {
-                                                return (
-                                                    _react2.default.createElement(ListItem, { key: ++i, itemIndex: ++i, accountItem: account })
-                                                )
-                                            })
                                         ])
                                 ])
                         ]),
