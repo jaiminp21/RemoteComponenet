@@ -117,71 +117,7 @@
             value: function componentDidMount() {
 
                 //const { navigate } = this.props.navigation;
-                showLoading(this);
-                localStorage.getData("LoginData").then((result) => {
-
-                    var result = JSON.parse(result);
-
-                    api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api",
-                        "GET", {
-                            'Content-Type': 'application/json',
-                            "X-CSRF-TOKEN": result.antiForgeryToken,
-                        }
-                    ).then((result1) => {
-
-                        if (!result1.getAccountsAt) {
-                            localStorage.deleteData("LoginData").then((result) => {
-                                navigate('TempLogin');
-                            });
-                            hideLoading(this);
-                            return
-                        }
-                        this.setState({
-                            accountUrl: result1.getAccountsAt.url,
-                            method: result1.getAccountsAt.method,
-                            token: result1.getAccountsAt.token,
-                        });
-
-                        api.fetchAsync("https://cfsfiserv.com" + result1.getAccountsAt.url,
-                            result1.getAccountsAt.method,
-                            {
-                                "X-CSRF-TOKEN": result.antiForgeryToken,
-                                "X-Request-Token": result1.getAccountsAt.token,
-                            }
-                        ).then((result2) => {
-
-                            var accountSummary = [];
-
-                            result2.forEach(element => {
-
-                                let type = element.type;
-
-                                let resultSet = indObjectByKey(accountSummary, "type", type);
-                                if (resultSet) {
-                                    if (resultSet.items) {
-                                        resultSet.items.push(element)
-                                    }
-                                } else {
-
-                                    var items = [];
-                                    items.push(element);
-                                    var accountSet = {};
-                                    accountSet = { items: items, type: element.type }
-                                    accountSummary.push(accountSet);
-                                }
-                            });
-                            this.setState({ accountSummary: accountSummary }, () => this.hideLoading())
-
-                        }).catch((err) => {
-                            alert(JSON.stringify(err));
-                            hideLoading(this)
-                        })
-
-                    });
-
-
-                });
-
+      
             }
         }, {
             key: 'render',
