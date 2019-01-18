@@ -129,7 +129,7 @@
 
                 return _react2.default.createElement(_reactNative.View, { style: styles.container }, [
 
-                    _react2.default.createElement(Loader, { key: ++i, isLoading: this.state.isLoading },
+                    _react2.default.createElement(Loader, { key: ++i, isLoading: _this.state.isLoading },
                         [
                         ]),
                     _react2.default.createElement(_reactNative.View, { key: ++i, style: isAndroid ? {} : { paddingTop: 10 } },
