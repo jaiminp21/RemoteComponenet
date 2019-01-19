@@ -4,9 +4,9 @@
     localStorage, api, navigate, require) {
     'use strict';
 
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
+   // Object.defineProperty(exports, "__esModule", {
+     //   value: true
+   // });
 
     var titleSize = 3.2;
     var grayColor = "#d9d9d9";
