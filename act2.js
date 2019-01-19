@@ -285,7 +285,7 @@
                     },
                     accSummary:function(){
                         navigate("AccountSummary")
-                    },color1 :"gray",color2:"gray",color3:"gray",color5:"gray",color5:"green"
+                    },color1 :"green",color2:"gray",color3:"gray",color5:"gray",color5:"gray"
                 })
                 ])
             }
