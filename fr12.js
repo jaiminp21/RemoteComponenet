@@ -122,7 +122,7 @@
             componentState.api.fetchAsync("https://cfsfiserv.com" + jsonData.profile.postLoginNameAt.url,
                     jsonData.profile.postLoginNameAt.method,
                     {
-                        "X-CSRF-TOKEN": profile.sessionKey.antiForgeryToken,
+                        "X-CSRF-TOKEN": jsonData.sessionKey.antiForgeryToken,
                         "X-Request-Token": jsonData.profile.postLoginNameAt.token
                     },
                     JSON.stringify(data)
