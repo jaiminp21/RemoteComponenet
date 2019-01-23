@@ -2,7 +2,7 @@
 
 
 (function main(React, ReactNative, NativeBase, componentState, StyleSheet,
-    Dimensions, Loader, navigate,localState,api,require) {
+    Dimensions, Loader, navigate,localStorage,api,require) {
     'use strict';
 
 
@@ -16,8 +16,7 @@
 
     var styles = StyleSheet.create({
         containerStyle: {
-            height: '100%',
-            width: '100%',
+            flex:1,
             backgroundColor: 'transparent',
         },
         viewStyle: {
@@ -102,7 +101,7 @@
     function loginCall(localState) {
         var userJsonData = { "loginName": localState.state.userName, "password": localState.state.password };
 
-        showLoading();
+        showLoading(localState);
 
         localStorage.getData("LoginData").then(function(result){
             
