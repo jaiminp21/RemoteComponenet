@@ -2,7 +2,7 @@
 
 
 (function main(React, ReactNative, NativeBase, componentState, StyleSheet,
-    Dimensions, Loader, navigate,require) {
+    Dimensions, Loader, navigate,localStorage,api,require) {
     'use strict';
 
 
@@ -139,7 +139,7 @@
                         antiForgeryToken: result.antiForgeryToken,
                         sessionTimeout: result.sessionTimeout,
                         sessionExpiredText: result.sessionExpiredText
-                    },function(){hideLoading(localState)});
+                    },function(){ hideLoading(localState) });
 
                     localStorage.saveData("LoginData", result);
                     
@@ -155,32 +155,6 @@
             hideLoading(localState);
         });
 
-        // fetch('https://cfsfiserv.com/QEUATSMT/api/Authentication/LogIn', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //     },
-        //     body: JSON.stringify(userJsonData)
-        // }).then(function (response) {
-        //     componentState.setState({ progressModal: false });
-        //     var responseObj = JSON.parse(response._bodyText);
-        //     var TokenResponse = responseObj.antiForgeryToken;
-        //     //console.log("responseObj  =::" + responseObj.antiForgeryToken);
-        //     if (TokenResponse == '' || TokenResponse == undefined) {
-        //         _nativebase.Toast.show({
-        //             text: 'Please enter the valid UserName and Password',
-        //             position: 'bottom',
-        //             buttonText: 'Okay',
-        //             duration: 5000,
-        //             type: 'danger'
-        //         });
-
-        //     } else {
-        //         componentState.props.navigation.navigate("AccountSummary", {
-        //             token: TokenResponse
-        //         });
-        //     }
-        // });
     }
 
 
