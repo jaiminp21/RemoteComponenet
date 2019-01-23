@@ -16,76 +16,27 @@
 
     var styles = StyleSheet.create({
         containerStyle: {
-            height: '100%',
-            width: '100%',
-            backgroundColor: 'transparent',
         },
         viewStyle: {
-            marginTop: '20%',
-            height: Dimensions.get('window').height / 3
         },
         userNameItem: {
-            width: "90%",
-            marginLeft: "5%",
-            marginRight: "5%",
-            marginTop: "5%",
         },
         inputStyle: {
-            color: '#2B7B9F',
-            paddingLeft: 10,
-            fontSize: 24,
-            fontWeight: '500',
-            width: '100%',
-            height: 50,
-            borderWidth: 1,
-            borderColor: '#ccc',
         },
         passwordItem: {
-            width: "90%",
-            marginLeft: "5%",
-            marginRight: "5%",
-            marginTop: "5%",
         },
         passwordlabel: {
-            color: '#2B7B9F',
-            fontFamily: 'Arial',
-            marginBottom: 5,
-            fontSize: 22
         },
         userNameLabel: {
-            color: '#2B7B9F',
-            fontFamily: 'Arial',
-            marginBottom: 5,
-            fontSize: 22
         },
         loginButton: {
-            backgroundColor: '#4568DC',
-            marginTop: '5%',
-            marginLeft: '5%',
-            marginRight: '5%',
-            width: '90%',
-            textAlign: 'center',
-            justifyContent: 'center'
         },
         imageStyle: {
-            width: '90%',
-            height: 180,
-        },
-        loginButtonLabel: {
-            color: '#FFFFFF',
-            fontSize: 20,
-            fontFamily: 'Arial',
-            textAlign: 'center',
-            justifyContent: 'center'
 
         },
+        loginButtonLabel: {
+        },
         activityIndicatorWrapper: {
-            backgroundColor: '#FFFFFF',
-            top: '40%',
-            borderRadius: 10,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-around'
         }
     });
 
