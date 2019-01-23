@@ -122,7 +122,7 @@
                         "loginName": localState.state.username,
                         "password": localState.state.password
                     })
-                ).then((result) => {
+                ).then(function(result) {
 
                     if (result == '' || result == undefined) {
                         _nativebase.Toast.show({
@@ -141,8 +141,7 @@
                         sessionExpiredText: result.sessionExpiredText
                     },function(){hideLoading(localState)});
 
-                    localStorage.saveData("LoginData", result).then((result) => {
-                    });
+                    localStorage.saveData("LoginData", result);
                     
                     navigate('AccountSummary');
 
@@ -151,7 +150,7 @@
                     hideLoading(localState);
                 });
             }
-        }).catch(err=>{
+        }).catch(function(err){
             alert(JSON.stringify(err));
             hideLoading(localState);
         });
