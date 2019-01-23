@@ -127,7 +127,8 @@
                 localStorage.getData("LoginData").then(function(result) {
 
                     var result = JSON.parse(result);
-                  //  console.warn(result)
+                    console.warn(result)
+                     console.warn("result")
 
                     api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api",
                         "GET",
@@ -140,7 +141,7 @@
                        /// console.warn(result1)
                         if (!result1.getAccountsAt) {
                             localStorage.deleteData("LoginData").then(function(result) {
-                                navigate('TempLogin');
+                                navigate('Login');
                             });
                             hideLoading(local);
                             return
