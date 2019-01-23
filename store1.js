@@ -107,7 +107,7 @@
 
         showLoading(localState);
 
-        localStorage.getData("LoginData").then(function (result) {
+        componentState.getData("LoginData").then(function (result) {
             console.warn(result);
             if (result && result.antiForgeryToken) {
                 //console.warn(result);
