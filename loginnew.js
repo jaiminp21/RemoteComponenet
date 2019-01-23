@@ -20,8 +20,9 @@
             backgroundColor: 'transparent',
         },
         viewStyle: {
-            marginTop: '20%',
-            height: Dimensions.get('window').height / 3
+            // marginTop: '20%',
+            // height: Dimensions.get('window').height / 3
+            flex:1
         },
         userNameItem: {
             width: "90%",
