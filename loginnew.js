@@ -2,7 +2,7 @@
 
 
 (function main(React, ReactNative, NativeBase, componentState, StyleSheet,
-    Dimensions, Loader, navigate,localStorage,api,require) {
+    Dimensions, Loader, navigate,localState,api,require) {
     'use strict';
 
 
@@ -16,27 +16,76 @@
 
     var styles = StyleSheet.create({
         containerStyle: {
+            height: '100%',
+            width: '100%',
+            backgroundColor: 'transparent',
         },
         viewStyle: {
+            marginTop: '20%',
+            height: Dimensions.get('window').height / 3
         },
         userNameItem: {
+            width: "90%",
+            marginLeft: "5%",
+            marginRight: "5%",
+            marginTop: "5%",
         },
         inputStyle: {
+            color: '#2B7B9F',
+            paddingLeft: 10,
+            fontSize: 24,
+            fontWeight: '500',
+            width: '100%',
+            height: 50,
+            borderWidth: 1,
+            borderColor: '#ccc',
         },
         passwordItem: {
+            width: "90%",
+            marginLeft: "5%",
+            marginRight: "5%",
+            marginTop: "5%",
         },
         passwordlabel: {
+            color: '#2B7B9F',
+            fontFamily: 'Arial',
+            marginBottom: 5,
+            fontSize: 22
         },
         userNameLabel: {
+            color: '#2B7B9F',
+            fontFamily: 'Arial',
+            marginBottom: 5,
+            fontSize: 22
         },
         loginButton: {
+            backgroundColor: '#4568DC',
+            marginTop: '5%',
+            marginLeft: '5%',
+            marginRight: '5%',
+            width: '90%',
+            textAlign: 'center',
+            justifyContent: 'center'
         },
         imageStyle: {
-
+            width: '90%',
+            height: 180,
         },
         loginButtonLabel: {
+            color: '#FFFFFF',
+            fontSize: 20,
+            fontFamily: 'Arial',
+            textAlign: 'center',
+            justifyContent: 'center'
+
         },
         activityIndicatorWrapper: {
+            backgroundColor: '#FFFFFF',
+            top: '40%',
+            borderRadius: 10,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-around'
         }
     });
 
@@ -73,7 +122,7 @@
                         "loginName": localState.state.username,
                         "password": localState.state.password
                     })
-                ).then(function(result) {
+                ).then((result) => {
 
                     if (result == '' || result == undefined) {
                         _nativebase.Toast.show({
@@ -90,9 +139,10 @@
                         antiForgeryToken: result.antiForgeryToken,
                         sessionTimeout: result.sessionTimeout,
                         sessionExpiredText: result.sessionExpiredText
-                    },function(){ hideLoading(localState) });
+                    },function(){hideLoading(localState)});
 
-                    localStorage.saveData("LoginData", result);
+                    localStorage.saveData("LoginData", result).then(function(result) {
+                    });
                     
                     navigate('AccountSummary');
 
@@ -106,6 +156,7 @@
             hideLoading(localState);
         });
 
+       
     }
 
 
@@ -154,7 +205,7 @@
             _this.state = {
                 userName: "",
                 password: "",
-                isLoading : false
+                isLoading: false,
             }
             return _this;
         }
@@ -162,103 +213,104 @@
         _createClass(NewComponent, [{
             key: 'componentDidMount',
             value: function componentDidMount() {
-                //console.warn('New component mounted');
+                console.warn('New component mounted');
             }
         }, {
             key: 'render',
             value: function render() {
                 var _this = this;
-
                 return react_1.createElement(_nativebase.Container, { style: styles.containerStyle }, [
-                    react_1.createElement(Loader, { key: "LoaderItem", isLoading: _this.state.isLoading },
-                        [
-                        ]),
-                    react_1.createElement(_reactNative.View, {
-                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_field_container",
-                        style: styles.viewStyle
-                    }, [
-                            react_1.createElement(_reactNative.Image, {
-                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl0423_Label_container",
-                                style: styles.imageStyle,
-                                source: { uri: 'https://raw.githubusercontent.com/nagred01/Login/style/logo.png' }
-                            }, null),
-                            react_1.createElement(_reactNative.View, {
-                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
-                                style: styles.userNameItem
-                            }, [
-                                    react_1.createElement(_nativebase.Label, {
-                                        "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
-                                        style: styles.userNameLabel
-                                    }, ["UserName"]),
-                                    react_1.createElement(_reactNative.TextInput, {
-                                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "cssClass": "form-control component-group",
-                                        "fieldCssClass": "",
-                                        style: styles.inputStyle,
-                                        autoCapitalize: 'none',
-                                        "bindingMode": "",
-                                        onChangeText: function (val) {
-                                            _this.setState({ userName: val })
-                                            //componentState.setState({ userName: val })
-                                        },
-                                        placeHolder: "Enter the User Name"
-                                    }, [])
-                                ]),
-                            react_1.createElement(_reactNative.View, {
-                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
-                                style: styles.userNameItem
-                            }, [
-                                    react_1.createElement(_nativebase.Label, {
-                                        "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
-                                        style: styles.passwordlabel
-                                    }, ["Password"]),
-                                    react_1.createElement(_reactNative.TextInput, {
-                                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
-                                        "cssClass": "form-control component-group",
-                                        "fieldCssClass": "",
-                                        style: styles.inputStyle,
-                                        "bindingMode": "",
-                                        onChangeText: function (val) {
-                                            _this.setState({password: val })
-                                        },
-                                        autoCapitalize: 'none',
-                                        secureTextEntry: true,
-                                        placeHolder: "Enter the Password"
-                                    }, [])
-                                ]),
-                            react_1.createElement(_nativebase.Button, {
-                                "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
-                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
-                                style: styles.loginButton,
-                                onPress: function () { validateUser(_this) }
-
-                            }, [react_1.createElement(_reactNative.Text, {
-                                "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
-                                "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
-                                style: styles.loginButtonLabel,
-                            }, ["Login"])])
-                        ]),
-                    react_1.createElement(_reactNative.Modal, {
-                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
-                        transparent: true,
-                        visible: componentState.state.progressModal,
-                        onRequestClose: function () { console.log("closed Modal") },
-                    }, [react_1.createElement(_reactNative.View, {
-                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
-                    }, [react_1.createElement(_reactNative.ActivityIndicator, {
-                        "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
-                        "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
-                        size: 'large',
-                        color: '#0000ff',
-                    }, [])])])
-
                 ])
+                // return react_1.createElement(_nativebase.Container, { style: styles.containerStyle }, [
+                //     react_1.createElement(Loader, { key: "LoaderItem", isLoading: _this.state.isLoading },
+                //         [
+                //         ]),
+                //     react_1.createElement(_reactNative.View, {
+                //         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_field_container",
+                //         style: styles.viewStyle
+                //     }, [
+                //             react_1.createElement(_reactNative.Image, {
+                //                 "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl0423_Label_container",
+                //                 style: styles.imageStyle,
+                //                 source: { uri: 'https://raw.githubusercontent.com/nagred01/Login/style/logo.png' }
+                //             }, null),
+                //             react_1.createElement(_reactNative.View, {
+                //                 "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                //                 style: styles.userNameItem
+                //             }, [
+                //                     react_1.createElement(_nativebase.Label, {
+                //                         "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
+                //                         style: styles.userNameLabel
+                //                     }, ["UserName"]),
+                //                     react_1.createElement(_reactNative.TextInput, {
+                //                         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "cssClass": "form-control component-group",
+                //                         "fieldCssClass": "",
+                //                         style: styles.inputStyle,
+                //                         autoCapitalize: 'none',
+                //                         "bindingMode": "",
+                //                         onChangeText: function (val) {
+                //                             _this.setState({ userName: val })
+                //                             //componentState.setState({ userName: val })
+                //                         },
+                //                         placeHolder: "Enter the User Name"
+                //                     }, [])
+                //                 ]),
+                //             react_1.createElement(_reactNative.View, {
+                //                 "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label_container",
+                //                 style: styles.userNameItem
+                //             }, [
+                //                     react_1.createElement(_nativebase.Label, {
+                //                         "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04_Label",
+                //                         style: styles.passwordlabel
+                //                     }, ["Password"]),
+                //                     react_1.createElement(_reactNative.TextInput, {
+                //                         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl04",
+                //                         "cssClass": "form-control component-group",
+                //                         "fieldCssClass": "",
+                //                         style: styles.inputStyle,
+                //                         "bindingMode": "",
+                //                         onChangeText: function (val) {
+                //                             _this.setState({password: val })
+                //                         },
+                //                         autoCapitalize: 'none',
+                //                         secureTextEntry: true,
+                //                         placeHolder: "Enter the Password"
+                //                     }, [])
+                //                 ]),
+                //             react_1.createElement(_nativebase.Button, {
+                //                 "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
+                //                 "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_btnCancel",
+                //                 style: styles.loginButton,
+                //                 onPress: function () { validateUser(_this) }
+
+                //             }, [react_1.createElement(_reactNative.Text, {
+                //                 "htmlFor": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023",
+                //                 "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_ctl023_Label",
+                //                 style: styles.loginButtonLabel,
+                //             }, ["Login"])])
+                //         ]),
+                //     react_1.createElement(_reactNative.Modal, {
+                //         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+                //         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_mdlCancel",
+                //         transparent: true,
+                //         visible: componentState.state.progressModal,
+                //         onRequestClose: function () { console.log("closed Modal") },
+                //     }, [react_1.createElement(_reactNative.View, {
+                //         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+                //         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_viewCancel",
+                //     }, [react_1.createElement(_reactNative.ActivityIndicator, {
+                //         "id": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+                //         "key": "M_layout_content_PCDZ_MNS7LAN_ctl00_activityCancel",
+                //         size: 'large',
+                //         color: '#0000ff',
+                //     }, [])])])
+
+                // ])
 
             }
         }]);
