@@ -122,7 +122,7 @@
                         "loginName": localState.state.username,
                         "password": localState.state.password
                     })
-                ).then((result) => {
+                ).then(function(result){
 
                     if (result == '' || result == undefined) {
                         _nativebase.Toast.show({
