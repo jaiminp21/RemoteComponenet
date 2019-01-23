@@ -316,7 +316,7 @@
         }]);
 
         return NewComponent;
-    }(_react2.Component);
+    }(react_1.Component);
 
     return NewComponent
 })
