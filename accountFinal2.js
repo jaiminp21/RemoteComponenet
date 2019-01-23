@@ -1,4 +1,4 @@
-(function main(React, ReactNative, StyleSheet1, responsiveHeight,
+(function main(React, ReactNative, StyleSheet, responsiveHeight,
     responsiveFontSize, Header, Footer, Platform, CustomDivider, Loader,
     LinkField, ListItem, componentState, api, navigate, require) {
     'use strict';
@@ -6,7 +6,7 @@
     var titleSize = 3.2;
     var grayColor = "#d9d9d9";
     
-    var styles = StyleSheet1.create({
+    var styles = StyleSheet.create({
         bottomLayer: {
             flexDirection: 'row',
             justifyContent: 'center',
