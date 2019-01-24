@@ -92,7 +92,7 @@
         //console.warn("hide Loading");
         localState.setState({ isLoading: false });
     }
-
+    function logout(localState){ 
       api.fetchAsync("https://cfsfiserv.com/QEUATSMT/api/Authentication/LogOut",
                             "POST",
                             {
