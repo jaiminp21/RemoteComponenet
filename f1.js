@@ -86,6 +86,12 @@
     function showLoading(localState) {
         localState.setState({ isLoading: true });
     }
+    
+    
+    function hideLoading(localState) {
+        //console.warn("hide Loading");
+        localState.setState({ isLoading: false });
+    }
 
     function logout(localState) {
       showLoading(localState)
@@ -103,10 +109,6 @@
                         });
     }
 
-    function hideLoading(localState) {
-        //console.warn("hide Loading");
-        localState.setState({ isLoading: false });
-    }
 
     var NewComponent = function (_React$Component) {
         _inherits(NewComponent, _React$Component);
