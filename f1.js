@@ -151,7 +151,7 @@
                     ).then(function(result1) {
 
                         if (!result1.getAccountsAt) {
-                            localStorage.deleteData("LoginData").then(function(result) {
+                            componentState.localStorage.deleteData("LoginData").then(function(result) {
                                 navigate('Login');
                             });
                             hideLoading(local);
