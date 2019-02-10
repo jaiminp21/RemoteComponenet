@@ -1,3 +1,6 @@
 {
-"version" :"1.0" 
+ "version_name" :"1",
+ "version_code" :"1",
+  "filename" :"index.android.bundle",
+  "checksum_md5" :"md5"
 }
