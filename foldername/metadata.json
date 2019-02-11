@@ -1,6 +1,7 @@
 {
- "version_name" :"1.0",
- "version_code" :"1",
- "filename" :"index.android.bundle",
- "checksum_md5" :"1"
+  "filename": "index.android.bundle",
+  "react_native_version": "0.57.4",
+  "timestamp": 1549896725743,
+  "checksum_md5": "3b0f0cd3117a2ae0379e1cf2156d110b",
+  "checksum_sha256": "f1237013908f52cbee80d08ee9542f0b2f6347ab43b33ac12a6eb50706b2d780"
 }
